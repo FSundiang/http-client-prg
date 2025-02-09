@@ -12,7 +12,7 @@ export class HttpclientService {
 
   getUsersRemotely(): Observable<any> {
     return this.http.get<any[]>('https://jsonplaceholder.typicode.com/users').pipe(
-      map(users => users.slice(0,5)) 
+      map(users => users.slice(0,6)) 
     );
   }
 }
